@@ -1,0 +1,190 @@
+:root {
+    --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+    --bg-color: rgb(40, 47, 97);
+}
+
+.ex-items {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color);
+    margin: 30px;
+    padding: 20px;
+    margin-left: 300px;
+    width: 700px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    box-shadow: var(--box-shadow);
+}
+
+.ex-items img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 100%;
+}
+
+.experience {
+    width: 900px;
+    padding: 80px;
+}
+
+.experience h1 {
+    margin-left: 0px;
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+}
+.experience h5 {
+    font-size: 18px; /* Adjust the size as needed */
+    color: white; /* This can be kept or changed */
+    font-family:monospace
+}
+
+
+/* Responsive styles */
+/* For screens 480px or less */
+@media screen and (max-width: 480px) {
+    .ex-items {
+        padding: 15px;
+        width: 100%; /* Make the ex-items take full width */
+        margin-left: 0; /* Remove any left margin */
+        flex-direction: column; /* Stack the items vertically */
+        text-align: center; /* Center the text */
+    }
+
+    .experience {
+        width: 100%; /* Ensure the experience section takes full width */
+        padding: 20px; /* Adjust padding for better spacing */
+        margin-top: 100px;
+    }
+
+    .experience h1 {
+        font-size: 1.7rem; /* Smaller font size for mobile */
+        text-align: center; /* Center the heading */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+    }
+
+    .ex-items img {
+        width: 50px; /* Smaller image size */
+        height: 50px;
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 15px; /* Space between image and text */
+    }
+
+    .experience h5 {
+        font-size: 16px; /* Adjust font size for better readability */
+        text-align: center; /* Center the text */
+    }
+}
+
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .experience {
+        width: 100%;
+        padding-top: 400px;
+        margin-top: -90px;
+    }
+    .ex-items {
+        margin-left: 20px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+   
+
+    .experience h1 {
+        margin-left: -30px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    .ex-items img {
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+/* For screens 1024px and below */
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    .ex-items {
+        margin-left: 20px; /* Reduced margin for better layout */
+        width: 80%; /* Adjusted width to fit the screen */
+        flex-direction: row; /* Keep items in a row for larger screens */
+        text-align: left; /* Align text to the left for readability */
+        padding: 20px;
+        margin-left: 70px;
+    }
+
+    .experience {
+        width: 80%; /* Adjusted width for better responsiveness */
+        padding: 40px; /* Reduced padding for better spacing */
+        margin-left: 10%; /* Center the experience section */
+        padding-top: 400px;
+        margin-top: -70px;
+    }
+
+    .experience h1 {
+        margin-left: 0;
+        font-size: 2rem; /* Slightly larger heading for better readability */
+        text-align: center; /* Center the heading */
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    .experience h5 {
+        font-size: 20px; /* Slightly larger text for better readability */
+        text-align: center;
+    }
+
+    .ex-items img {
+        width: 60px; /* Slightly smaller image for better fit */
+        height: 60px;
+        margin-right: 20px; /* Maintain space between the image and text */
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width: 1199px) {
+    .experience {
+        width: 80%; /* Adjust width to fit the screen better */
+        padding: 40px; /* Adjust padding for spacing */
+        margin: 0 auto; /* Center the card horizontally */
+        margin-top: 60px;
+    }
+
+    .experience h1 {
+        font-size: 2rem; /* Slightly larger heading for better readability */
+        margin-left: -70px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+    }
+
+    .experience h5 {
+        font-size: 18px; /* Adjust font size */
+        text-align: center; /* Center the text */
+    }
+
+    .ex-items {
+        width: 100%; /* Ensure the item takes full width */
+        flex-direction: row; /* Keep items in a row */
+        text-align: left; /* Align text to the left for readability */
+        padding: 20px;
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .ex-items img {
+        width: 60px; /* Adjust image size for better fit */
+        height: 60px;
+        margin-right: 20px; /* Maintain space between the image and text */
+    }
+}

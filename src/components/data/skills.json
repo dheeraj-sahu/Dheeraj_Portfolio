@@ -1,0 +1,41 @@
+[
+    {   "id":1,
+        "title":"HTML",
+        "imgSrc":"/Skills/html.png"
+    },
+    {    "id":2,
+        "title":"CSS",
+        "imgSrc":"Skills/css.png"
+    },
+    {    "id":3,
+        "title":"JavaScript",
+        "imgSrc":"Skills/js.png"
+    },
+    {    "id":4,
+        "title":"React Js",
+        "imgSrc":"Skills/react.svg"
+    },
+    
+    {    "id":5,
+        "title":"Tailwind CSS",
+        "imgSrc":"Skills/tailwind.svg"
+    },
+    {    "id":6,
+        "title":"Django",
+        "imgSrc":"Skills/django.svg"
+    },
+    {    "id":7,
+        "title":"Boostrap",
+        "imgSrc":"Skills/boostrap.svg"
+    },
+    {    "id":8,
+        "title":"Python",
+        "imgSrc":"Skills/python.svg"
+    },
+    {    "id":9,
+        "title":"C++",
+        "imgSrc":"Skills/cpp.svg"
+    }
+    
+    
+]

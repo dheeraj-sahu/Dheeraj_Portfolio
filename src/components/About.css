@@ -1,0 +1,190 @@
+.about {
+    height: 94vh;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 60px;
+}
+
+.about-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-content .left .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+.about-content .left .img img {
+    height: 370px;
+    width: 370px;
+    border-radius: 50%;
+    border: 4px solid #f39c12;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content .right p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family:Merriweather;
+}
+
+.about-content .right a {
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #f39c12;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-content .right a:hover {
+    background-color: #e67e22;
+    transform: translateY(-5px);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+    .about{
+        margin-top: -40px;
+    }
+    .about-header {
+        font-size: 1.5rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        font-weight: bold;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+
+    .about-content .left .img {
+        height: 250px;
+        width: 250px;
+        margin-left: 20px;
+    }
+
+    .about-content .left .img img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .about-content .right p {
+        font-size: 0.7rem;
+        margin-left: 20px;
+        margin-bottom: 40px;
+        margin-top: -30px;
+    }
+
+    .about-content .right a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+        margin-left: 60px;
+    }
+}
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .about{
+        margin-top: 90px;
+    }
+    .about-header {
+        margin-top: 60px;
+        font-size: 2rem;
+        margin-left: 10px;
+        /* text-align: center; */
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+    
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-content .left .img {
+        height: 300px;
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .about-content .left .img img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .about-content .right p {
+        font-size: 1rem;
+        
+    }
+
+    .about-content .right a {
+        font-size: 1rem;
+        padding: 10px 20px;
+        text-align: center;
+        margin-left: 120px;
+        
+    }
+}
+
+
+/* For screens 1024px and below */
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    .about{
+        padding-top: 100px;
+    }
+    .about-header {
+        font-size: 2.2rem;
+        text-align: center; /* Center-align the header for better appearance on medium screens */
+        margin-left: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center; /* Center the content for better layout */
+    }
+
+    .about-content .left .img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .about-content .left .img img {
+        height: 320px;
+        width: 320px;
+    }
+
+    .about-content .right p {
+        font-size: 1.2rem; /* Slightly larger text for better readability */
+    }
+
+    .about-content .right a {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        text-align: center;
+        margin-left: 180px;
+    }
+}

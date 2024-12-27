@@ -1,0 +1,202 @@
+
+:root {
+    --box-shadow-skill: 2px 2px 5px 5px rgba(101, 175, 10, 0.5);
+    --bg-color: rgb(40, 47, 97);
+    --text-color: white;
+}
+.project-container {
+    margin-top: 100px;
+    padding: 80px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    row-gap: 40px;
+    column-gap: 0px;
+  
+}
+
+.project-card {
+    background-color: black;
+    border-radius: 3px; 
+    width: 30%;
+    /* margin-right: 30px; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid yellow;
+    box-shadow: var(--box-shadow-skill);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(29, 233, 7, 0.3);
+}
+.project-card .img{
+    width:  100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid yellow; */
+}
+.card-img {
+    height: 180px;
+    
+    /* object-fit: cover; */
+    padding: 6px;
+    border-radius:15px;
+
+
+}
+.card-img img{
+    border: 1px solid yellow;
+}
+
+.card-body {
+    padding: 15px;
+    /* background-color: #34495e; */
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 10px;
+    
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card-body .btn {
+    background-color: rgb(11,26,51);
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-size: 21px;
+    border: 1px solid yellow;
+}
+
+.card-body .btn:hover {
+    background-color: yellow;
+}
+
+/* Media Query for Smaller Screens */
+
+
+@media (max-width: 480px) {
+    :root {
+        --box-shadow-skill: 1px 1px 3px 3px rgba(101, 175, 10, 0.4);
+    }
+
+    .project-container {
+        margin-top: 50px; /* Adjusted for smaller screens */
+        padding: 20px;
+    }
+
+    .project-heading {
+        text-align: center; /* Centers the heading */
+        font-size: 1.8rem;
+        color: var(--text-color);
+        margin-bottom: 30px; /* Adds spacing below the heading */
+    }
+
+    .project-cards {
+        display: flex;
+        flex-direction: column; /* Stacks the cards vertically */
+        align-items: center; /* Centers the cards horizontally */
+        gap: 20px; /* Adds spacing between the cards */
+        margin: 0; /* Removes extra margin */
+    }
+
+    .project-card {
+        width: 100%; /* Makes the card span the full width */
+        box-shadow: var(--box-shadow-skill);
+        border-radius: 5px;
+        margin-bottom: 20px; /* Adds spacing between cards */
+    }
+
+    .card-img {
+        height: 150px;
+        padding: 4px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .btn-container {
+        flex-direction: column; /* Stacks buttons vertically */
+        gap: 8px;
+    }
+
+    .card-body .btn {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+}
+
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .project-card {
+        width: 100%;
+    }
+
+    .card-body .btn {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+    .project-heading{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+    }
+    .btn-container {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
+
+    .card-body .btn {
+        width: 100%; /* Make buttons span the full width */
+        text-align: center; /* Ensure centered text alignment */
+        font-size: 0.9rem; /* Slightly smaller font size for compact view */
+    }
+}
+
+/* Media Query for Medium Screens (Tablet and smaller) */
+@media screen and (min-width:769px)  and (max-width: 1024px) {
+    .project-card {
+        width: 45%;
+    }
+    .project-heading{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+    }
+}
+
+

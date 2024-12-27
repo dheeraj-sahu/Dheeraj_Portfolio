@@ -1,0 +1,170 @@
+:root {
+    --box-shadow: 5px 5px 10px 10px rgba(101,175,10,0.5);
+    --bg-color: rgb(40,47,97);
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92vh;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.home .right .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .right .img img {
+    height: 280px;
+    width: 280px;
+    border-radius: 100%;
+    border: 5px solid yellow;
+    animation-name: hero;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.home .left {
+    width: 600px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    box-shadow: var(--box-shadow);
+    background-color: var(--bg-color);
+}
+
+/* Animations */
+@keyframes hero {
+    0% {
+        border-color: blue;
+        transform: translate(0, 0px);
+        box-shadow: 10px 10px 100px 50px blue;
+    }
+    25% {
+        border-color: rgb(239,244,11);
+        box-shadow: 10px 10px 100px 50px rgb(239,244,11);
+    }
+    50% {
+        border-color: rgb(12,12,199);
+        transform: translate(0, 10px);
+        box-shadow: 10px 10px 100px 50px rgb(12,12,199);
+    }
+    75% {
+        border-color: rgb(130,217,160);
+        box-shadow: 10px 10px 100px 50px rgb(130,217,160);
+    }
+    100% {
+        border-color: rgb(50,55,205);
+        transform: translate(0, -0px);
+        box-shadow: 10px 10px 100px 50px rgb(50,55,205);
+    }
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media screen and (min-width:481px) and  (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        justify-content: center; /* Center the content vertically */
+        align-items: center; /* Center the content horizontally */
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .home .left {
+        width: 80%; /* Reduce the width on smaller screens */
+        padding: 20px;
+        text-align: center;
+    }
+
+    .home .right {
+        margin-top: 20px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .home .right .img img {
+        height: 200px;
+        width: 200px;
+        margin-top: 30px;
+    }
+}
+
+/* For mobile screens */
+
+@media screen and (max-width: 480px) {
+    .home {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: -50px;
+        
+    }
+
+    .home .left {
+        width: 100%; /* Make the left section smaller */
+        /* padding: 15px; */
+        text-align: center;
+    }
+
+    .home .right .img img {
+        height: 150px;
+        width: 150px;
+        display: none;
+    }
+
+    .home .left h1 {
+        font-size: 1.5rem;
+    }
+
+    .home .left .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    .home {
+        flex-direction: row; /* Keep the content in a row */
+        justify-content: space-between; /* Distribute space between the left and right sections */
+        height: auto; /* Allow content to adjust based on the content height */
+        padding: 40px; /* Add some padding for spacing */
+        width: 100%; /* Ensure it takes the full width */
+        padding-top: 80px;
+    }
+
+    .home .left {
+        width: 50%; /* Reduce the width to fit the content better */
+        padding: 25px;
+        text-align: center;
+    }
+
+    .home .right {
+        width: 40%; /* Slightly reduce width to keep balance */
+        text-align: center;
+    }
+
+    .home .right .img img {
+        height: 240px; /* Adjust image size for better fitting */
+        width: 240px;
+    }
+
+    .home .left h1 {
+        font-size: 2rem; /* Adjust font size for readability */
+    }
+
+    .home .left .btn {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 10px 20px;
+    }
+}
+

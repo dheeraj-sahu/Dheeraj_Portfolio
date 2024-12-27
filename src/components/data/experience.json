@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "role": "Campus Ambassador",
+        "organisation": "GeeksforGeeks",
+        "startDate": "Dec 2024 -",
+        "endDate": "Present,",
+        "location": "Delhi,India",
+        "experiences": [
+            "Actively promoting GeeksforGeeks resources and events within the student community at NIT Delhi.",
+            "Building awareness about the platform's educational content among students."
+        ],
+        "imgSrc": "/gfg_logo.png"
+    },
+    {
+        "id": 2,
+        "role": "Backend Developer Intern",
+        "organisation": "Doorstep Delhi",
+        "startDate": "June 2024 -",
+        "endDate": "August 2024,",
+        "location": "Delhi,India",
+        "experiences": [
+            "Worked as part of the AI Integration team, contributing to backend development tasks.",
+            "Assisted in the development and optimization of APIs for seamless integration with AI models."
+        ],
+        "imgSrc": "/doorstepp.png"
+    },
+  
+    {
+        "id": 3,
+        "role": "Volunteer-Technical Club, Upvision",
+        "organisation": "UpVision-Technical Club",
+        "startDate": "Sep 2023 -",
+        "endDate": "May 2024,",
+        "location": "NIT Delhi,Delhi,India",
+        "experiences": [
+            "Worked to help organize various tournaments for the college community."
+            
+        ],
+        "imgSrc": "/technical.jpg"
+    },
+    {
+        "id": 4,
+        "role": "Volunteer-UBA Cell",
+        "organisation": "Unnat Bharat Abhiyan Cell",
+        "startDate": "Sep 2023 -",
+        "endDate": "Dec 2023,",
+        "location": "NIT Delhi,Delhi,India",
+        "experiences": [
+            "Volunteered for various community events and social initiatives organized by Unnat Bharat Abhiyan.",
+            "Participated in cultural activities, including a Nukkad Natak (street play) to raise awareness on social issues."
+        ],
+        "imgSrc": "/unnat.jpg"
+    }
+    
+    
+]
